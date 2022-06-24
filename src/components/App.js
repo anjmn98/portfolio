@@ -2,21 +2,21 @@ import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import Title from './Title'
-import profile from './assets/Anjana (1).jpg'
+import profile from '../assets/Anjana (1).jpg'
 
-class RegularClass{
+// class RegularClass{
 
-}
+// }
 
-class ComponentClass extends Component{
+// class ComponentClass extends Component{
 
-}
+// }
 
-const regularCLassInstance = new RegularClass();
-const componentClassInstance = new ComponentClass();
+// const regularCLassInstance = new RegularClass();
+// const componentClassInstance = new ComponentClass();
 
-console.log("regularCLassInstance",regularCLassInstance);
-console.log("componentClassInstance",componentClassInstance);
+// console.log("regularCLassInstance",regularCLassInstance);
+// console.log("componentClassInstance",componentClassInstance);
 
 class App extends Component {
     state = { displayBio: false}
