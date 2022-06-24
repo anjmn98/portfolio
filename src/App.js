@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
+import Title from './Title'
 import profile from './assets/Anjana (1).jpg'
 
 class RegularClass{
@@ -39,7 +40,12 @@ render(){
         <div>
             <img src={profile} alt='profile' className='profile' />
             <h1> Hello! </h1>
-            <p> My name is Anjana. I'm a software engineer.</p>
+            <p> My name is Anjana.</p>
+            {/* To know about component unmount, use the following code. When displayBio is false, we are not displaying title, thus unmounting the component.
+            Then componentWillUnmount method will be called. 
+            { this.state.displayBio? <Title/> : null }
+            */}
+            <Title />
             <p> I'm always looking forward to working on meaningful projects. </p>
             {
                 this.state.displayBio ? (
