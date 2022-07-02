@@ -3,6 +3,7 @@ import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import Title from './Title'
 import profile from '../assets/Anjana (1).jpg'
+import Jokes from './Jokes';
 
 // class RegularClass{
 
@@ -65,6 +66,8 @@ render(){
             <Projects />
             <hr />
             <SocialProfiles />
+            <hr />
+            <Jokes />
         </div>
     )
     }
