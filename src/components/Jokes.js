@@ -11,16 +11,19 @@ class Jokes extends Component {
             method: 'GET',
             headers: headers
         }).then(response => response.json() )
-        .then(json => {console.log('json', json.contents.jokes[0].joke)
-        this.setState( { joke: json.contents.jokes[0].joke })
-    });
+        .then(json => {
+         //console.log('json', json.contents.jokes[0].joke.text)
+         this.setState( { joke: json.contents.jokes[0].joke.text })
+    })
+    .catch(error => alert(error.message));
   
         }
     
 
     render() {
-    var { joke } = this.state.joke;
-    
+     var joke = JSON.stringify(this.state.joke);
+    //  og('joke', typeof this.state.joke);
+     joke.replace('\r\n/g', '');
         return (
             <div>
                 <h2>Highlighted Joke</h2>
