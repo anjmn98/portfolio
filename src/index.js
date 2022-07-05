@@ -5,12 +5,10 @@ import { createBrowserHistory } from 'history';
 import Jokes from './components/Jokes'
 import App from './components/App';
 
-const history = createBrowserHistory();
-
 ReactDOM.render(
-    <Router history={history}>
+    <Router history={createBrowserHistory()}>
         <Switch>
-            <Route exact = {true} path='/' component={App} />
+            <Route exact path='/' component={App} />
             <Route path='/jokes' component={Jokes} />
         </Switch>
     </Router>, 

@@ -66,8 +66,6 @@ render(){
             <Projects />
             <hr />
             <SocialProfiles />
-            <hr />
-            <Jokes />
         </div>
     )
     }
