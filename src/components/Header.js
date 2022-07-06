@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = ({children})=> {
+const Header = ({ children })=> {
 
     const style = {
         dispay: 'inline-block',
